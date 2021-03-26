@@ -1,0 +1,30 @@
+{
+  "name": "forero-security",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forerosantiago/Forero-Security.git"
+  },
+  "author": "Santiago Forero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/forerosantiago/Forero-Security/issues"
+  },
+  "homepage": "https://github.com/forerosantiago/Forero-Security#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "canvas": "^2.7.0",
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "randomcolor": "^0.6.2"
+  },
+  "devDependencies": {
+    "standard": "^16.0.3"
+  }
+}
