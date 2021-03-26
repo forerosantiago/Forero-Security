@@ -2,6 +2,9 @@ require('dotenv').config()
 
 const fs = require('fs')
 const Discord = require('discord.js')
+const express = require('express')
+const app = express()
+
 const token = process.env.token
 
 const client = new Discord.Client()
@@ -29,3 +32,8 @@ for (const file of eventFiles) {
 }
 
 client.login(token)
+
+app.listen(3000, () => {
+  console.log('Listening at port 3000')
+})
+app.use(express.static('website'))
