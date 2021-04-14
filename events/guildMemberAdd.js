@@ -46,6 +46,7 @@ module.exports = {
       .attachFiles([attachment])
       .setImage('attachment://welcome-image.png')
 
+    channel.send(member)
     channel.send(embed)
   }
 }
