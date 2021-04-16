@@ -41,12 +41,11 @@ module.exports = {
     const attachment = new Discord.MessageAttachment(canvas.toBuffer(), 'welcome-image.png')
 
     const embed = new Discord.MessageEmbed()
-      .setDescription(`Hey **${member.user.tag}**, you are the **${getOrdinal(member.guild.memberCount)}** member :partying_face:`)
       .setColor(color)
       .attachFiles([attachment])
       .setImage('attachment://welcome-image.png')
 
-    channel.send(member)
+    channel.send(`Hey **${member}**, you are the **${getOrdinal(member.guild.memberCount)}** member :partying_face:`)
     channel.send(embed)
   }
 }
