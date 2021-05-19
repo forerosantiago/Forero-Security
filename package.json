@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/forerosantiago/Forero-Security#readme",
   "dependencies": {
+    "@discordjs/opus": "^0.5.0",
     "axios": "^0.21.1",
     "canvas": "^2.7.0",
     "discord.js": "^12.5.1",
